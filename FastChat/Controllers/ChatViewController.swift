@@ -91,6 +91,7 @@ class ChatViewController: UIViewController {
         do {
           try firebaseAuth.signOut()
             navigationController?.popToRootViewController(animated:true )
+            print("Signout")
             
         } catch let signOutError as NSError {
           print("Error signing out: %@", signOutError)
